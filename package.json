@@ -1,0 +1,42 @@
+{
+  "name": "radio",
+  "version": "0.1.0",
+  "description": "Yet another event bus library.",
+  "main": "./index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha  ./test/spec/*",
+    "testone": "mocha ",
+    "testbus": "mocha  ./test/bus",
+    "testlib": "mocha  ./test/lib",
+    "lint": "eslint lib"
+  },
+  "keywords": [
+    "event bus"
+  ],
+  "author": "sskyy",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "~5.8.29",
+    "babel-core": "~5.8.32",
+    "babel-loader": "~5.3.2",
+    "mocha": "^2.2.5",
+    "prettyjson": "~1.1.1",
+    "webpack": "~1.9.10"
+  },
+  "dependencies": {
+    "babel-eslint": "~4.1.5",
+    "co": "~4.5.4",
+    "eslint": "~1.9.0",
+    "eslint-config-rackt": "1.0.0",
+    "lodash.clonedeep": "~3.0.1",
+    "lodash.merge": "~3.3.1",
+    "lodash.uniq": "~3.2.1",
+    "pre-commit": "~1.1.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
