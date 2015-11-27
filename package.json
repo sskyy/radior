@@ -1,5 +1,5 @@
 {
-  "name": "radio",
+  "name": "radior",
   "version": "0.1.0",
   "description": "Yet another event bus library.",
   "main": "./index.js",

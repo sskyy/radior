@@ -1,14 +1,13 @@
-[![npm version](https://badge.fury.io/js/zero.png)](http://badge.fury.io/js/roof-bus)
-[![Build Status](https://travis-ci.org/sskyy/roof-bus.svg?branch=master)](https://travis-ci.org/sskyy/roof-bus)
+[![npm version](https://img.shields.io/npm/v/radior.svg?style=flat-square)](https://img.shields.io/npm/v/radior.svg?style=flat-square)
 
-roof-bus is a event bus for both practical programmers and application architects. It can be used as a simple string-based event bus whitout any buy-in in small apps. When handling large apps, especially the one with complex business logic, its powerful features like Listener Sequence Control can help you keep the system low-coupled and flexsible during the growth.
+Radior is a event bus for both practical programmers and application architects. It can be used as a simple string-based event bus without any buy-in in small apps. When handling large apps, especially the one with complex business logic, its powerful features like Listener Sequence Control can help you keep the system low-coupled and flexsible during the growth.
 
 ## Quick Start
 
-roof-bus is really easy to get start with, check the code below. I don't think it need any explaination.
+Radior is really easy to get start with, check the code below. I don't think it need any explain.
 
 ```javascript
-var Bus = require('roof-bus')
+var Bus = require('Radior')
 var bus = new Bus
 
 bus.on('start', function busListener( arg1, arg2 ){
@@ -55,7 +54,7 @@ bus.on('process1', function(){
 })
 ```
 
-When the hierachy goes deep, it will be hard to figure out what exactly happend when top event fired. Don't worry, roof-bus generates a detailed tracestack every time. And already been used in a web framework with amazing 
+When the hierachy goes deep, it will be hard to figure out what exactly happened when top event fired. Don't worry, Radior generates a detailed tracestack every time. And already been used in a web framework with amazing
 
 
 <div style='text-align:center'>
@@ -72,7 +71,7 @@ Read on for more usage, you may find more practical features.
 
 
 ```javascript
-var Bus = require('roof-bus')
+var Bus = require('Radior')
 var bus = new Bus
 
 bus.on('start', function busListener( arg1, arg2 ){
@@ -135,7 +134,7 @@ bus.fire('start', 'argument1', 'argument2')
 
 ### 3. Handle asynchronicity
 
-`fire` method always return a promise. If you have synchronous code in listener and want roof-bus wait for you, return a promise.
+`fire` method always return a promise. If you have synchronous code in listener and want Radior wait for you, return a promise.
 
 ```javascript
 bus.on('start', function listener1( arg1, arg2 ){
@@ -237,7 +236,7 @@ bus.on('start', {
 
 ### 6. Fire inside listener
 
-You already we can fire another event inside listener, and roof-bus will keep a tracestack for you. Just keep one thing in mind that you must use `this.fire` inside the listener:
+You already we can fire another event inside listener, and Radior will keep a tracestack for you. Just keep one thing in mind that you must use `this.fire` inside the listener:
 
 ```javascript
 bus.on('topEvent', function(){
@@ -248,7 +247,7 @@ bus.on('topEvent', function(){
 
 ### 7. Error handling
 
-You can throw a build-in Error instance or use roof-bus `error` method.
+You can throw a build-in Error instance or use Radior `error` method.
 
 ```javascript
 bus.on('start', function listener1( arg1, arg2 ){
