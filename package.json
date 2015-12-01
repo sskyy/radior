@@ -19,11 +19,9 @@
   "author": "sskyy",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "~5.8.32",
-    "babel-loader": "~5.3.2",
+    "babel": "~5.8.34",
     "mocha": "^2.2.5",
-    "prettyjson": "~1.1.1",
-    "webpack": "~1.12.9"
+    "prettyjson": "~1.1.1"
   },
   "dependencies": {
     "babel-eslint": "~4.1.5",
