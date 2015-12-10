@@ -6,8 +6,6 @@ describe('Async listener test', function () {
   //return
   let bus
   const event = 'dance'
-  const childEvent = 'sing'
-  const descendantEvent = 'shoot'
 
   beforeEach(function () {
     bus = new Bus

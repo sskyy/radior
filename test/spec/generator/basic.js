@@ -2,7 +2,7 @@
 const assert = require('assert')
 const Bus = require('../../../index.js')
 
-describe('Basic listener listene and fire', ()=>{
+describe('Basic listener listener and fire', ()=>{
   let bus
   beforeEach(()=>{
     bus = new Bus
